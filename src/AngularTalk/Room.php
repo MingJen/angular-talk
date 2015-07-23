@@ -145,7 +145,7 @@ class AngularTalk_Room
      * Strings used in the app
      * @var array
      */
-    public $strings = [
+    public $strings = array(
         'messagePlaceholder' => 'Enter your message...',
         'submit'             => 'Submit',
         'reply'              => 'Reply',
@@ -156,7 +156,7 @@ class AngularTalk_Room
         'save'               => 'Save',
         'cancel'             => 'Cancel',
         'delete_confirm'     => 'Are you sure? This cannot be undone'
-    ];
+    );
 
     public function __construct($channel, AngularTalk_MessageProvider $provider)
     {
@@ -207,9 +207,9 @@ class AngularTalk_Room
      */
     public function listen($echo = true)
     {
-        $response = [
+        $response = array(
             'status' => 'success'
-        ];
+        );
 
         $request = json_decode(file_get_contents('php://input'));
 
